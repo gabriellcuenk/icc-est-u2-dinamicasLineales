@@ -12,4 +12,5 @@ public class Ejercicio1 {
             invertido += pila.pop();
         return invertido;
     }
+    
 }

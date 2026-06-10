@@ -1,17 +1,40 @@
-import java.net.SocketImpl;
+
 import java.util.ArrayDeque;
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
-import java.util.Stack;
+
  
 public class App {
     public static void main(String[] args) throws Exception {
-        // runLinkList();
- 
-        // runQueue();
- 
+        System.out.println("-------------------------");
+        System.out.println("runStack");
         runStack();
+
+        System.out.println("-------------------------");
+        System.out.println("\nrunQueue");
+        runQueue();
+
+        System.out.println("-------------------------");
+        System.out.println("\nrunLinkList");
+        runLinkList();
+
+        System.out.println("-------------------------");
+        Ejercicio1 ejercicio1 = new Ejercicio1();
+        System.out.println("Ejercicio 1");
+        System.out.println("Palabra: COMPUTACION");
+        String palabra = "COMPUTACION";
+        System.out.println(ejercicio1.invertString(palabra));
+
+        System.out.println("-------------------------");
+        System.out.println("Ejercicio 2:");
+        System.out.println("Palabras: radar, computacion");
+        Ejercicio2 ejercicio2 = new Ejercicio2();
+        String palabra1 = "radar";
+        String palabra2 = "computacion";
+
+        System.out.println(ejercicio2.esPalindromo(palabra1));
+        System.out.println(ejercicio2.esPalindromo(palabra2));
+        System.out.println("-------------------------");
     }
  
     private static void runStack() {
@@ -63,7 +86,6 @@ public class App {
  
     private static void runLinkList() {
         LinkedList<String> nombres = new LinkedList<>();
-        ArrayList<String> nombres2 = new ArrayList<>();
  
         nombres.add("Juan");
         nombres.add("pedro");
